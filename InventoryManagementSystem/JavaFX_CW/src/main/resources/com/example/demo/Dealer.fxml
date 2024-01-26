@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="870.0" stylesheets="@Asserts/Dealer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DealerController">
+   <children>
+      <TableView fx:id="DealerTable" layoutX="106.0" layoutY="164.0" prefHeight="268.0" prefWidth="628.0">
+         <columns>
+            <TableColumn fx:id="DealerID" maxWidth="107.77779388427734" prefWidth="107.77779388427734" style="-fx-alignment: center;" text="Dealer ID" />
+            <TableColumn fx:id="DealerNameID" maxWidth="219.55557250976562" prefWidth="191.5555419921875" style="-fx-alignment: center;" text="Dealer Name" />
+            <TableColumn fx:id="DealerContactNoID" maxWidth="250.22216796875" prefWidth="138.44439697265625" style="-fx-alignment: center;" text="Contact no." />
+            <TableColumn fx:id="DealerLocationID" maxWidth="250.0" prefWidth="189.55560302734375" style="-fx-alignment: center;" text="Location" />
+         </columns>
+      </TableView>
+      <Pane layoutX="-2.0" layoutY="55.0" prefHeight="2.0" prefWidth="874.0" style="-fx-background-color: black;" />
+      <Text layoutX="39.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer's Details" wrappingWidth="384.80345153808594">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="104.0" fitWidth="123.0" layoutX="781.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/Pcoffee.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="randomBtn" layoutX="99.0" layoutY="92.0" onMouseClicked="#randomClick" prefHeight="38.0" prefWidth="304.0" styleClass="creative-button" stylesheets="@Asserts/Dealer.css" text="Genarate random dealers" />
+      <JFXButton fx:id="ViewItemsID" layoutX="428.0" layoutY="92.0" onMouseClicked="#viewItemsClick" prefHeight="37.0" prefWidth="308.0" styleClass="creative-button" stylesheets="@Asserts/Dealer.css" text="View Item Details" />
+      <TextField fx:id="searchField" layoutX="520.0" layoutY="13.0" prefHeight="31.0" prefWidth="455.0" styleClass="search-bar" stylesheets="@Asserts/Dealer.css" />
+      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="784.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="search-button">
+         <image>
+            <Image url="@Asserts/images/searchIcon.gif" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

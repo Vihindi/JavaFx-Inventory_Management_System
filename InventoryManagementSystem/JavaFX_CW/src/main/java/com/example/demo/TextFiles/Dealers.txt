@@ -1,0 +1,7 @@
+Dealer_ID        | Dealer_name        | Contact_no    | Location         | item_1   | item_2     | item_3
+001              | Robert Luna        | 0765891324    | Biyagama         | PC       | chairs     | workstation table
+002              | David Reinhart     | 0756789123    | Gampaha          | router   | printer    | webcam
+003              | John Kenady        | 0704231459    | Colombo          | stool    | High table | cafe based computer table
+004              | George Dodson      | 0778532013    | Dehiwala         | PC       | headphones | printer
+005              | Peter Parker       | 0713577754    | Bambalapitiya    | chairs   | light bulbs| Air conditioner
+006              |Sarah Doe          | 0775846245    | Wallawatte       | stool    | round table| conference table

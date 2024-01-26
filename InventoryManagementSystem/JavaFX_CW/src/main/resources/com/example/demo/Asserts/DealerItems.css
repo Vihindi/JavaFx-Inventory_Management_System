@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url("DealerItems.png");
+    -fx-background-size: cover; /* Adjust as needed */
+}

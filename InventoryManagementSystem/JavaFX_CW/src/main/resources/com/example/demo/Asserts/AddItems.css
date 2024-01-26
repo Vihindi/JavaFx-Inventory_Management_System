@@ -1,0 +1,6 @@
+.bgColour-bg{
+   /* -fx-background-color: linear-gradient(to bottom right, #42e7d3, #9650d0, #073372);*/
+    -fx-background-image: url("wifi1.jpg");
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+
+}

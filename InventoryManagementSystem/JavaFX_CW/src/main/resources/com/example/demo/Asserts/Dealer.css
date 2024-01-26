@@ -1,0 +1,33 @@
+
+.creative-button {
+    /* Add your custom and creative styles here */
+    -fx-background-color: rgba(40, 105, 148, 0.75);
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 20px;
+    -fx-cursor: pointer;
+    -fx-border-color: #42e7d3;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5);
+}
+
+/* Styles for the search bar */
+.search-bar {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #bbb;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-pref-width: 300px;
+}
+
+/* Styles for the search button */
+
+
+/* Add a subtle glow effect on hover for the button */
+.search-button:hover {
+    -fx-effect: dropshadow(gaussian, #4caf50, 10, 0, 0, 0);
+}
+

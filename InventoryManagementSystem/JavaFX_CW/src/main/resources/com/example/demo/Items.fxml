@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#saveClick" prefHeight="523.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ItemsController">
+   <children>
+      <TableView fx:id="itemsTable" layoutX="22.0" layoutY="140.0" prefHeight="298.0" prefWidth="826.0">
+         <columns>
+            <TableColumn fx:id="ItemID" maxWidth="70.0" prefWidth="70.0" style="-fx-alignment: center;" text="ITEM CODE" />
+            <TableColumn fx:id="ItemNameID" maxWidth="100.0" prefWidth="100.0" style="-fx-alignment: center;" text="ITEM NAME" />
+            <TableColumn fx:id="ItemBrandID" maxWidth="100.0" prefWidth="88.44442749023438" style="-fx-alignment: center;" text="ITEM BRAND" />
+            <TableColumn fx:id="ItemPriceID" maxWidth="131.55563354492188" prefWidth="98.0" style="-fx-alignment: center;" text="PRICE" />
+            <TableColumn fx:id="ItemQuantityID" maxWidth="99.77783203125" prefWidth="78.22225952148438" style="-fx-alignment: center;" text="QUANTITY" />
+            <TableColumn fx:id="ItemCategoryID" maxWidth="109.99996948242188" prefWidth="91.55563354492188" style="-fx-alignment: center;" text="CATEGORY" />
+            <TableColumn fx:id="ItemDateID" maxWidth="140.88885498046875" prefWidth="116.22210693359375" style="-fx-alignment: center;" text="PURCHASED DATE" />
+            <TableColumn fx:id="ItemImageID" maxWidth="149.77789306640625" prefWidth="97.77783203125" style="-fx-alignment: center;" text="IMAGE" />
+            <TableColumn fx:id="ViewImageID" prefWidth="82.66668701171875" text="View" />
+         </columns>
+      </TableView>
+      <Pane layoutX="-2.0" layoutY="55.0" prefHeight="2.0" prefWidth="874.0" style="-fx-background-color: black;" />
+      <Text layoutX="39.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Details" wrappingWidth="384.80345153808594">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Text>
+      <HBox layoutX="40.0" layoutY="69.0" prefHeight="50.0" prefWidth="360.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="57.0" onMouseClicked="#getAddView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/UserPlus.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" onMouseClicked="#refreshTable" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/Refresh.gif" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" onMouseClicked="#saveClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/SaveIcon.gif" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="updateID" fitHeight="50.0" fitWidth="57.0" onMouseClicked="#UpdateClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/edit.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" onMouseClicked="#DeleteClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/delete.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="104.0" fitWidth="123.0" layoutX="771.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/coffeeWifi.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

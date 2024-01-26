@@ -1,0 +1,18 @@
+001              |PC                          | HP              | 46250         | 20
+001              |chairs                      | Piyestra        | 17721         | 25
+001              |workstation table           | Alpha           | 15675         | 30
+002              |router                      | Xiaomi          | 8152          | 10
+002              |printer                     | HP              | 18420         | 15
+002              |webcam                      | Logitec         | 4500          | 5
+003              |cafe based computer table   | Damro           | 40000         | 10
+003              |High table                  | Abans           | 15000         | 10
+003              |stool                       | Damro           | 15000         | 10
+004              |headphones                  | JBL             | 10000         | 15
+004              |PC                          | DELL            | 50250         | 20
+004              |printer                     | DELL            | 20000         | 15
+005              |light bulbs                 | OUTAD           | 4440          | 30
+005              |Air conditioner             | Abans           | 244900        | 5
+005              |chairs                      | Damro           | 25000         | 100
+006              |stool                       | Abans           | 18000         | 20
+006              |round table                 | Damro           | 20465         | 7
+006		         |conference table            | Damro           | 45000         | 2

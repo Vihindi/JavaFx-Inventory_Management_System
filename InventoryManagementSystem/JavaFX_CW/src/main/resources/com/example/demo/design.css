@@ -1,0 +1,32 @@
+.login-bg{
+    -fx-background-color: linear-gradient(to bottom right,#9e8dde,#243B55,#141E30);
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #2c6eb5;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-padding: 3px 3px 3px 25px;
+    -fx-text-inner-color:#fff;
+}
+.button{
+    -fx-background-color: #2c6eb5;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: #5aa0ea;
+}
+.hyper-text{
+    -fx-text-fill:#4488cc ;
+}
+.Close{
+    -fx-background-color: #e04353;
+    -fx-background-radius: 100%;
+    -fx-cursor: hand;
+}
+.Close:hover{
+    -fx-background-color: #ff6073;
+}
+/*.text-field-error {
+    -fx-text-fill: red;
+}
+*/

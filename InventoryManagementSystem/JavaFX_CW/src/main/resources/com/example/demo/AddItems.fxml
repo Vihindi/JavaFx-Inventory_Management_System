@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="374.0" stylesheets="@Asserts/AddItems.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddItemsController">
+   <children>
+      <HBox prefHeight="63.0" prefWidth="364.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add an item" textAlignment="CENTER" wrappingWidth="230.80343627929688">
+               <font>
+                  <Font name="Calibri Bold" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </HBox.margin>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11403508484363556" green="0.10805176198482513" blue="0.10805176198482513" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.11403508484363556" green="0.10805176198482513" blue="0.10805176198482513" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.38761117476946566">
+                           <color>
+                              <Color red="0.11403508484363556" green="0.02393328957259655" blue="0.02393328957259655" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.655480984340045">
+                           <color>
+                              <Color red="0.6987870931625366" green="0.16601689159870148" blue="0.7368420958518982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6987870931625366" green="0.16601689159870148" blue="0.7368420958518982" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fitHeight="103.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/People.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+      <AnchorPane prefHeight="359.0" prefWidth="364.0">
+         <children>
+            <Button fx:id="addBtn" defaultButton="true" layoutX="80.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#AddClick" prefHeight="33.0" prefWidth="74.0" text="Add" />
+            <VBox layoutX="121.0" layoutY="23.0" prefHeight="285.0" prefWidth="227.0" spacing="6.0">
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+               <children>
+                  <AnchorPane prefHeight="285.0" prefWidth="242.0">
+                     <children>
+                        <TextField id="Fields" fx:id="Code" layoutY="1.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter Item Code" stylesheets="@Asserts/AddItems.css" />
+                        <TextField id="Fields" fx:id="Name" layoutY="43.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter Item Name" stylesheets="@Asserts/AddItems.css" />
+                        <TextField id="Fields" fx:id="Brand" layoutY="83.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter Item Brand" stylesheets="@Asserts/AddItems.css" />
+                        <TextField id="Fields" fx:id="Price" layoutY="123.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter price" stylesheets="@Asserts/AddItems.css" />
+                        <TextField id="Fields" fx:id="Quantity" layoutY="163.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter quantity" stylesheets="@Asserts/AddItems.css" />
+                        <TextField id="Fields" fx:id="Category" layoutY="201.0" prefHeight="25.0" prefWidth="220.0" promptText="Enter category" stylesheets="@Asserts/AddItems.css" />
+                        <DatePicker id="Fields" fx:id="Date" layoutY="241.0" prefHeight="25.0" prefWidth="220.0" promptText="Pick a date" stylesheets="@Asserts/AddItems.css" />
+                        <Label fx:id="priceError" layoutX="-2.0" layoutY="147.0" prefHeight="17.0" prefWidth="220.0" text="Invalid Price" visible="false" />
+                        <Label fx:id="quantityError" layoutX="2.0" layoutY="186.0" prefHeight="17.0" prefWidth="214.0" text="Invalid quantity" visible="false" />
+                        <Label fx:id="dateError" layoutY="269.0" prefHeight="17.0" prefWidth="220.0" text="Invalid Date" visible="false" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutY="25.0" prefHeight="239.0" prefWidth="127.0" spacing="6.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Item Code">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Item Name">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Item Brand">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Price">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Quantity">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Category">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="104.0" text="Date">
+                     <VBox.margin>
+                        <Insets bottom="17.0" left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="cancelBtn" defaultButton="true" layoutX="197.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#cancelClick" prefHeight="33.0" prefWidth="74.0" text="Cancel" />
+            <ImageView fitHeight="77.0" fitWidth="87.0" layoutX="290.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Asserts/Pcoffee.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="updateID" defaultButton="true" layoutX="81.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#updateBtnClick" prefHeight="33.0" prefWidth="74.0" text="Update" />
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="bgColour" />
+      <String fx:value="bgColour-bg" />
+   </styleClass>
+</VBox>
