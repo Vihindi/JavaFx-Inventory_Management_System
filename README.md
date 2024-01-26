@@ -2,7 +2,7 @@
 John's Internet cafe
 
 Login Page
-![Login]
+![Login](https://github.com/Vihindi/JavaFx-Inventory_Management_System/assets/108913016/8727b47a-78f9-484b-a131-c136bd6f3f2b)
 
 Navigation Pane
 ![Welcome]
